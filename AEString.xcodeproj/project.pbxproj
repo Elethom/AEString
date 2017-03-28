@@ -10,6 +10,9 @@
 		936733961E8A217800F1F8C7 /* AEString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9367338C1E8A217800F1F8C7 /* AEString.framework */; };
 		9367339B1E8A217800F1F8C7 /* AEStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367339A1E8A217800F1F8C7 /* AEStringTests.swift */; };
 		9367339D1E8A217800F1F8C7 /* AEString.h in Headers */ = {isa = PBXBuildFile; fileRef = 9367338F1E8A217800F1F8C7 /* AEString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		936733A81E8A235000F1F8C7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936733A71E8A235000F1F8C7 /* String.swift */; };
+		936733AA1E8A23A400F1F8C7 /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936733A91E8A23A400F1F8C7 /* CharacterSet.swift */; };
+		936733B01E8A241800F1F8C7 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936733AF1E8A241800F1F8C7 /* StringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		936733951E8A217800F1F8C7 /* AEStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AEStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9367339A1E8A217800F1F8C7 /* AEStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEStringTests.swift; sourceTree = "<group>"; };
 		9367339C1E8A217800F1F8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936733A71E8A235000F1F8C7 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		936733A91E8A23A400F1F8C7 /* CharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
+		936733AF1E8A241800F1F8C7 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				9367338F1E8A217800F1F8C7 /* AEString.h */,
+				936733A91E8A23A400F1F8C7 /* CharacterSet.swift */,
+				936733A71E8A235000F1F8C7 /* String.swift */,
 				936733A61E8A21E800F1F8C7 /* Supporting Files */,
 			);
 			path = Sources;
@@ -81,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9367339A1E8A217800F1F8C7 /* AEStringTests.swift */,
+				936733AF1E8A241800F1F8C7 /* StringTests.swift */,
 				9367339C1E8A217800F1F8C7 /* Info.plist */,
 			);
 			path = Tests;
@@ -205,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936733AA1E8A23A400F1F8C7 /* CharacterSet.swift in Sources */,
+				936733A81E8A235000F1F8C7 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936733B01E8A241800F1F8C7 /* StringTests.swift in Sources */,
 				9367339B1E8A217800F1F8C7 /* AEStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
