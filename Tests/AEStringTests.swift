@@ -2,8 +2,8 @@
 //  AEStringTests.swift
 //  AEStringTests
 //
-//  Created by Elethom Hunter on 28/03/2017.
-//  Copyright © 2017 Project Fig. All rights reserved.
+//  Created by Elethom Hunter on 1/2/19.
+//  Copyright © 2019 Project Fig. All rights reserved.
 //
 
 import XCTest
@@ -12,13 +12,11 @@ import XCTest
 class AEStringTests: XCTestCase {
     
     override func setUp() {
-        super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
     }
     
     func testExample() {

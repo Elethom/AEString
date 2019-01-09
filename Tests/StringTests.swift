@@ -10,7 +10,7 @@ import XCTest
 @testable import AEString
 
 class StringTests: XCTestCase {
-
+    
     func testStrings() {
         var string: String
         // English
@@ -31,8 +31,7 @@ class StringTests: XCTestCase {
         XCTAssertEqual(string[3,7,-1], "gfed")
         XCTAssertEqual(string[0,0,-1], "zyxwvutsrqponmlkjihgfedcba")
         XCTAssertEqual(string[5,15,-3], "olif")
-        XCTAssertEqual(string.length(), 26)
-        XCTAssertFalse(string.containsCJKCharacters())
+        XCTAssertFalse(string.containsCJKCharacters)
         // Chinese
         string = "苟利國家生死以，豈因禍福避趨之。"
         XCTAssertEqual(string[0], "苟")
@@ -51,8 +50,7 @@ class StringTests: XCTestCase {
         XCTAssertEqual(string[3,7,-1], "以死生家")
         XCTAssertEqual(string[0,0,-1], "。之趨避福禍因豈，以死生家國利苟")
         XCTAssertEqual(string[3,10,-3], "因以家")
-        XCTAssertEqual(string.length(), 16)
-        XCTAssertTrue(string.containsCJKCharacters())
+        XCTAssertTrue(string.containsCJKCharacters)
         // Emoji
         string = "😀😬😁😂😃😄😅😆😇😉😊🙂🙃☺️😋😌😍😘😗😙😚😜😝😛🤑🤓"
         XCTAssertEqual(string[0], "😀")
@@ -71,8 +69,7 @@ class StringTests: XCTestCase {
         XCTAssertEqual(string[3,7,-1], "😅😄😃😂")
         XCTAssertEqual(string[0,0,-1], "🤓🤑😛😝😜😚😙😗😘😍😌😋☺️🙃🙂😊😉😇😆😅😄😃😂😁😬😀")
         XCTAssertEqual(string[5,15,-3], "😋🙂😇😄")
-        XCTAssertEqual(string.length(), 26)
-        XCTAssertFalse(string.containsCJKCharacters())
+        XCTAssertFalse(string.containsCJKCharacters)
     }
-
+    
 }

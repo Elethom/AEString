@@ -9,7 +9,7 @@
 import Foundation
 
 public extension CharacterSet {
-
+    
     static let cjkCharacters: CharacterSet = {
         var cjkCharacterSet = CharacterSet()
         cjkCharacterSet.insert(charactersIn: 0x1100 ... 0x11FF) // Hangul Jamo
@@ -24,12 +24,12 @@ public extension CharacterSet {
         cjkCharacterSet.insert(charactersIn: 0x2F800 ... 0x2FA1D) // CJK Compatibility Ideographs
         return cjkCharacterSet
     }()
-
+    
     public mutating func insert(charactersIn range: Range<Int>) {
         guard let lower = UnicodeScalar(range.lowerBound), let upper = UnicodeScalar(range.upperBound) else { return }
         insert(charactersIn: lower ..< upper)
     }
-
+    
     public mutating func insert(charactersIn range: ClosedRange<Int>) {
         guard let lower = UnicodeScalar(range.lowerBound), let upper = UnicodeScalar(range.upperBound) else { return }
         insert(charactersIn: lower ... upper)
