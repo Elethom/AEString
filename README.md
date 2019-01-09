@@ -91,20 +91,13 @@ string[5,15,-3]
 
 ### Misc
 
-#### Get length
-
-```swift
-string.length()
-26
-```
-
 #### Determine if it contains CJK characters
 
 ```swift
-string.containsCJKCharacters()
+string.containsCJKCharacters
 false
 
-"苟利國家生死以，豈因禍福避趨之。".containsCJKCharacters()
+"苟利國家生死以，豈因禍福避趨之。".containsCJKCharacters
 true
 ```
 
